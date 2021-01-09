@@ -1,3 +1,5 @@
+[![Build status](https://badge.buildkite.com/5b2aebe62e130dfb0980cf73c9f179b850833b1637988a8512.svg)](https://buildkite.com/hsk-corp/buildkite-agent-aws-builds)
+
 # Buildkite Agent with AWS Builds
 
 This docker image builds on the existing [Buildkite agent docker image](https://hub.docker.com/r/buildkite/agent/dockerfile) and pre-bakes in:
