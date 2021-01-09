@@ -11,7 +11,3 @@ steps:
     commands:
       - which python3
       - which pip
-
-  - label: ":python: Try installing something"
-    commands:
-      - pip install boto3
