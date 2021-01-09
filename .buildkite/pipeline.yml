@@ -10,4 +10,3 @@ steps:
   - label: ":python: Test python"
     commands:
       - which python3
-      - which pip
