@@ -1,0 +1,13 @@
+steps:
+  - label: ":aws: Test aws"
+    command: aws s3 ls
+
+  - label: ":nodejs: Test node"
+    commands:
+      - node -v 
+      - npm -v
+  
+  - label: ":python: Test python"
+    commands:
+      - which python3
+      - which pip
