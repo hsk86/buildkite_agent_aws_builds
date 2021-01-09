@@ -2,15 +2,18 @@
 
 This docker image builds on the existing [Buildkite agent docker image](https://hub.docker.com/r/buildkite/agent/dockerfile) and pre-bakes in:
 
-- CDK (Typescript + Python) and its dependencies
-- Python + boto3
-- Node + AWS-SDK
+- Python
+- Node
+
+Others to be added as personally needed :)
 
 ## Running this locally
-Run `start-docker.sh` on your local machine. Ensure you have working AWS credentials file on ${HOME}/.aws/credentials so that the image can authenticate to AWS.
+Run `start-docker.sh` on your local machine. Ensure you have working AWS credentials file on `${HOME}/.aws/credentials` so that the image can authenticate to AWS.  
 
-## Running it in AWS (e.g. EC2)
-Same as above, but highly recommended that you remove the credentials in favour of using IAM roles attached to the instance.
+Remember to set `MY_BUILDKITE_TOKEN` environment variable with whatever Buildkite supplies you with!
+
+## Recommendation for running in AWS (e.g. in an EC2 instance)
+Remove the credentials bit from `start-docker.sh` (`-v ${HOME}/.aws/credentials:/root/.aws/credentials:ro`) in favour of using IAM roles attached to the instance.
 
 ## Testing
 A simple pipeline in buildkite in included to test each installation included in the `.buildkite` folder
