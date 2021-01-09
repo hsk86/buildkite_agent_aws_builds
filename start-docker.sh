@@ -9,4 +9,5 @@ sudo docker build -t buildkite-agent-aws-build .
 sudo docker run -i \
 -e BUILDKITE_AGENT_TOKEN=$MY_BUILDKITE_TOKEN \
 -v ${HOME}/.aws/credentials:/root/.aws/credentials:ro \
+--dns 8.8.8.8 \
 buildkite-agent-aws-build 
