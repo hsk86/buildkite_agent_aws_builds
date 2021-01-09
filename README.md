@@ -4,6 +4,7 @@ This docker image builds on the existing [Buildkite agent docker image](https://
 
 - Python
 - Node
+- AWS CLI
 
 Others to be added as personally needed :)
 
