@@ -8,7 +8,7 @@ This docker image builds on the existing [Buildkite agent docker image](https://
 - Node
 - AWS CLI
 
-Others to be added as personally needed :)
+Others to be added as personally needed
 
 ## Running this locally
 Run `start-docker.sh` on your local machine. Ensure you have working AWS credentials file on `${HOME}/.aws/credentials` so that the image can authenticate to AWS.  
